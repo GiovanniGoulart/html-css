@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 
+em HTML e id  =  em CSS e # (so pode um elemento por documento HTML)
+em HTML e class = em CSS e .  (pode varios elementos) 
+*/
+body {
+    background-color: rgb(205,255,203);
+}
+h1{
+    color: rgb(4,109,0);
+}
+    #principal {
+    text-align: center;
+    background-color: rgba(4, 28, 2, 0.486);
+    color: rgb(8, 42, 8);
+}
+h2 {
+    color: #3c805e
+}
+    .basico {
+color: #072e1a;
+font-weight: bold; 
+    }
+    .intermediario {
+color: #e7d219;
+    }
+.avancado {
+color: #803c3c;
+}
+p {
+    text-indent: 3em;
+}
+.destaque {
+    background-color: rgba(222, 21, 21, 0.498);
+}
