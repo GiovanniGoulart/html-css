@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+ <header>
+<h1>Meu Site</h1>
+<span id="burguer" class="material-icons"onclick= "clickMenu()">menu</span>
+<menu id="itens">
+    <ul>
+        <li><a href="0">Opção 1</a></li>
+        <li><a href="0">Opção 2</a></li>
+        <li><a href="0">Opção 3</a></li>
+        <li><a href="0">Opção 4</a></li>
+        <li><a href="0">Opção 5</a></li>
+    </ul>
+</menu>
+ </header> 
+ <main>
+    <article>
+<h2>Testando Media Queries</h2>
+<P>
+    Através da técnica CSS chamada Media Queries, alinhada com definidos breakpoitns, conseguimos lidar com o desafio dos diferentes tamanhos de tela. <br>
+    Conteúdo relacionado. <br>
+    O conceito e aplicabilidade do Mobile First
+    WordPress e o desenvolvimento de aplicativos móveis
+    Não use Design Adaptativo. Considere o Design Responsivo
+    Se antigamente éramos desafiados com as inconsistências entre os navegadores de internet, hoje a problemática é outra. 
+    <p>   Existem mais de 18 mil modelos de celular, divididos entre mais de 300 marcas. 
+    O lado bom é que o display mais apreciado é o de 5,7 polegadas. Mesmo assim, temos uma infinidade de diferentes tamanhos de tela.
+    Projetar uma boa experiência do usuário nos diferentes tamanhos de tela dos dispositivos é um baita desafio. <br>
+    Portanto, você precisa conhecer o recurso de Media Query introduzida na CSS3.  </p>
+</P>
+<p>
+    O que são as Media Queries?
+É uma regra na CSS que te possibilita incluir um bloco de propriedades se, e somente, se uma determinada condição for verdadeira.
+Como estamos falando de mobile first e o desafio em lidar com os diferentes tamanhos de tela, fazemos uso esse método para enfrentar o problema.
+Ou seja, um conjunto de regras CSS serão aplicadas se uma condição baseada em tamanhos for verdadeira.
+Desta forma, aplicamos especificidades para os celulares, tablets e desktops, por exemplo. <br>
+Um exemplo de código CSS fazendo uso de uma Media Query seria assim: <br>
+@media only screen and (min-width : 320px) {
+  body {
+    DECLARAÇÃO CSS DESEJADA
+  }
+}
+</p>
+    </article>
+ </main>  
+ <script>
+    function clickMenu(){
+if (itens.style.display == 'block'){
+    itens.style.display =  'none'
+} else {
+    itens.style.display = 'block'
+}
+
+    }
+
+ </script>
+</body>
+</html>
